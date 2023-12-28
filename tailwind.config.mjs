@@ -9,7 +9,7 @@ export default {
 	  
 		  'sm': '620px',
 	
-		  'md': '910px'
+		  'md': '1020px'
 		},
 		extend: {
 		  screens: {

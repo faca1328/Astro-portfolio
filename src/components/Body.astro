@@ -8,7 +8,7 @@ const langMode = true;
     <div class="flex w-screen relative h-[35rem] min-h-fit">
         <div class="flex-1 bg-zinc-800 relative max-phone:h-full">
             <div
-                class="w-[40%] h-full absolute top-[15%] ml-16 max-md:w-[85%] max-sm:top-[10%] max-phone:top-4 max-phone:-left-6 max-phone:text-center"
+                class="w-[50%] h-full absolute top-[15%] ml-16 max-md:w-[85%] max-sm:top-[10%] max-phone:top-4 max-phone:-left-6 max-phone:text-center"
             >
                 <h1 class="text-orange-100/80 text-4xl max-phone:text-2xl">
                     {
@@ -85,6 +85,13 @@ const langMode = true;
                 </p>
             </div>
         </div>
+        <div class="absolute -right-1/4 top-[20%] justify-items-center max-md:hidden">
+            <img
+              src={photo.src}
+              alt="Facundo Martinez"
+              class="object-cover max-w-[40%] h-[50%] rounded-full"
+            />
+          </div>
     </div>
 </>
 
