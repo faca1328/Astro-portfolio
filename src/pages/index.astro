@@ -1,6 +1,9 @@
 ---
+import Body from '../components/Body.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import {Project} from '../components/Project.tsx';
+import Technologies from '../components/Technologies.astro';
 
 ---
 
@@ -13,8 +16,17 @@ import Header from '../components/Header.astro';
 	<body>
 		<Header/>
 		<main>
-			<h1> body / main</h1>
+			<Body/>
+			<Technologies/>
+			<Project client:idle/>
 		</main>
-		<Footer />
+		<Footer/>
 	</body>
 </html>
+
+
+<style>
+	html{
+		scroll-behavior: smooth;
+	}
+</style>

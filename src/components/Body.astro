@@ -1,0 +1,101 @@
+---
+import photo from "../../public/Photo.jpeg";
+
+const langMode = true;
+---
+
+<>
+    <div class="flex w-screen relative h-[35rem] min-h-fit">
+        <div class="flex-1 bg-zinc-800 relative max-phone:h-full">
+            <div
+                class="w-[40%] h-full absolute top-[15%] ml-16 max-md:w-[85%] max-sm:top-[10%] max-phone:top-4 max-phone:-left-6 max-phone:text-center"
+            >
+                <h1 class="text-orange-100/80 text-4xl max-phone:text-2xl">
+                    {
+                        langMode ? (
+                            <>
+                                Hola! mi nombre es{" "} <br />
+                                <span class="font-serif text-5xl font-semibold text-orange-400/70 max-phone:text-4xl">
+                                    Facundo Martinez
+                                </span>
+                                <>
+                                    <br />
+                                </>{" "}
+                                y soy{" "}
+                                <span class="logo-gradient-dark font-medium text-[2.5rem]">
+                                    Front-End
+                                </span>{" "}
+                                Web Developer
+                            </>
+                        ) : (
+                            <>
+                                Hi , my name is{" "}
+                                <span class="font-serif text-5xl font-semibold text-orange-400/70 max-phone:text-2xl">
+                                    Facundo Martinez
+                                </span>
+                                <>
+                                    <br />
+                                    <br />
+                                </>{" "}
+                                and I am a{" "}
+                                <span class="logo-gradient-dark font-medium text-[2.5rem] max-phone:text-2xl ">
+                                    Front-End
+                                </span>{" "}
+                                Web Developer
+                            </>
+                        )
+                    }
+                </h1>
+                <p class="text-orange-100/80 text-xl mt-6">
+                    {
+                        langMode ? (
+                            <>
+                                Mi principal objetivo es crecer y desarrollarme
+                                en un campo que ofrezca continuos desafíos y
+                                aprendizaje constante.{" "}
+                                <>
+                                    <br />
+                                    <span class="text-orange-300/75 underline">
+                                        Soy una persona creativa, apasionada por
+                                        el desarrollo web, a la que le encanta
+                                        innovar y resolver problemas.
+                                    </span>
+                                </>{" "}
+                                <br />
+                                Además, soy confiable, trabajador, y busco
+                                mostrar mis ideas y capacidades de manera
+                                eficiente y útil.
+                            </>
+                        ) : (
+                            <>
+                                My main objective is to grow and develop in a
+                                field that offers continuous challenges and
+                                constant learning.{" "}
+                                <span class="text-orange-300/75 underline">
+                                    I am a creative person passionate about web
+                                    development who loves to create new things
+                                    and solve problems.
+                                </span>{" "}
+                                Additionally, I am trustworthy and hardworking,
+                                and I aim to show my ideas and capabilities in
+                                an efficient and useful manner.
+                            </>
+                        )
+                    }
+                </p>
+            </div>
+        </div>
+    </div>
+</>
+
+<style>
+    .logo-gradient-dark {
+        background-color: #acacac;
+        background-image: linear-gradient(45deg, #acacac, #e4a24d);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+</style>
