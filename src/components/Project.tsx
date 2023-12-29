@@ -89,7 +89,6 @@ export const Project = () => {
                   <Icons icon={tsIcon} name={'TS'} />
                   <Icons icon={tailwindIcon} name={'Tailwind'} />
                   <Icons icon={astroIcon} name={'Astro'} />
-                  <Icons icon={nodeIcon} name={'NodeJs'} />
 
                   <a className="text-amber-50 font-semibold rounded-lg bg-white/10 p-1 hover:scale-105 hover:bg-white/20 hover:text-amber-400 h-8 cursor-pointer warp" href="https://github.com/faca1328/Spoty-proyect-4" target="_blank" >
                     {langMode ?
