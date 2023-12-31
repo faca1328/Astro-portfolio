@@ -7,7 +7,7 @@ import sassIcon from "../../public/icons8-hablar-con-descaro-a.svg";
 import mySqlIcon from "../../public/icons8-logo-de-mysql.svg";
 import tsIcon from "../../public/icons8-mecanografiado.svg";
 import nodeIcon from "../../public/icons8-nodo-js.svg";
-import viteIcon from "../../public/icons8-rápidamente.svg";
+import viteIcon from "../../public/icons8-rapidamente.svg";
 import reactIcon from "../../public/icons8-reaccionar.svg";
 import bgImg from "../../public/bgimg.jfif";
 import reduxImg from "../../public/icons8-redux.svg";
