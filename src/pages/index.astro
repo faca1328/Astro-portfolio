@@ -1,9 +1,9 @@
 ---
-import Body from '../components/Body.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
+import {Body} from '../components/Body';
+import {Footer} from '../components/Footer';
+import {Header} from '../components/Header';
 import {Project} from '../components/Project.tsx';
-import Technologies from '../components/Technologies.astro';
+import {Technologies} from '../components/Technologies';
 
 ---
 
@@ -14,13 +14,13 @@ import Technologies from '../components/Technologies.astro';
 		<meta name="viewport" content="width=device-width" />
 	</head>
 	<body>
-		<Header/>
+		<Header client:load/>
 		<main>
-			<Body/>
-			<Technologies/>
-			<Project client:idle/>
+			<Body client:load/>
+			<Technologies client:visible/>
+			<Project client:visible/>
 		</main>
-		<Footer/>
+		<Footer client:visible/>
 	</body>
 </html>
 
