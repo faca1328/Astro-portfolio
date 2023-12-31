@@ -17,15 +17,16 @@ import reduxIcon from "../../public/icons8-redux.svg"
 import { Icons } from "./Icons"
 import { useRef, useState } from "react"
 import '../styles/animations.css'
-
+import { useStore } from '@nanostores/react';
+import { LangMode } from "../store/LangStore"
 
 export const Project = () => {
   const [portfolio, setPortfolio] = useState(true)
   const pTrue = portfolio ? 'bg-black/30' : '';
   const pFalse = portfolio ? '' : 'bg-black/30';
 
- 
-  const langMode = true
+  const $LangMode = useStore(LangMode);
+  //const langMode = true
 
 
   const video1 = useRef<HTMLVideoElement>(null);
@@ -35,13 +36,13 @@ export const Project = () => {
   const video5 = useRef<HTMLVideoElement>(null);
   const video6 = useRef<HTMLVideoElement>(null);
 
-  console.log(portfolio);
+ 
   
   return (
     <div className="flex w-screen bg-zinc-800 text-white flex-col h-full items-center pt-10" id="projects">
       <div className="rounded-full bg-gray-500 bg-opacity-20 items-center p-[2px] justify-between w-fit flex m-auto">
         <button className={`p-1 px-2 font-semibold text-amber-100 rounded-full cursor-pointer z-20 ${pTrue} transition-all duration-700 `} onClick={() => setPortfolio(true)}>
-          {langMode ?
+          {$LangMode ?
             (<>
               Proyectos
             </>) :
@@ -51,7 +52,7 @@ export const Project = () => {
           }
         </button>
         <button className={`p-1 px-2 font-semibold  text-cyan-100 rounded-full ml-2 cursor-pointer z-20 ${pFalse} transition-all duration-700`} onClick={() => setPortfolio(false)}>
-          {langMode ?
+          {$LangMode ?
             (<>
               Practicas
             </>) :
@@ -73,7 +74,7 @@ export const Project = () => {
               <video src={spotyVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video1} loop></video>
               <div className="text-center text-amber-50 font-medium">
                 <p>
-                  {langMode ?
+                  {$LangMode ?
                     (<>
                       Este es un clon básico de Spotify. El objetivo principal es la <span className="underline text-orange-200">modificación de la etiqueta 'audio' desde cualquier parte de la web. </span>Además, me concentro en un diseño simple, con transiciones suaves y la armonía entre los elementos con colores básicos.
                     </>) :
@@ -91,7 +92,7 @@ export const Project = () => {
                   <Icons icon={astroIcon} name={'Astro'} />
 
                   <a className="text-amber-50 font-semibold rounded-lg bg-white/10 p-1 hover:scale-105 hover:bg-white/20 hover:text-amber-400 h-8 cursor-pointer warp" href="https://github.com/faca1328/Spoty-proyect-4" target="_blank" >
-                    {langMode ?
+                    {$LangMode ?
                       (<>
                         Ir al codigo
                       </>) :
@@ -111,7 +112,7 @@ export const Project = () => {
               <video src={netflixVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video2} loop></video>
               <div className="text-center text-amber-50 font-medium">
                 <p>
-                  {langMode ?
+                  {$LangMode ?
                     (<>
                       Este es un clon de la web de Netflix. En este proyecto me concentro principalmente en la combinación de todos los elementos que ofrece el sitio web original de Netflix, <span className="underline text-orange-200">como el registro de usuario, el inicio de sesión, el reproductor de películas y las solicitudes a una API</span>, entre otros.
                     </>) :
@@ -130,7 +131,7 @@ export const Project = () => {
                   <Icons icon={viteIcon} name={'Vite'} />
 
                   <a className="text-amber-50 font-semibold rounded-lg bg-white/10 p-1 hover:scale-105 hover:bg-white/20 hover:text-amber-400 h-8 cursor-pointer" target="_blank" href="https://github.com/faca1328/Ntf-clon-proyect3">
-                    {langMode ?
+                    {$LangMode ?
                       (<>
                         Ir al codigo
                       </>) :
@@ -150,7 +151,7 @@ export const Project = () => {
               <video src={todoVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video3} loop></video>
               <div className="text-center text-amber-50 font-medium">
                 <p>
-                  {langMode ?
+                  {$LangMode ?
                     (<>
                       En esta lista de tareas pendientes, integro un estilo CSS y animaciones básico de forma precisa con todo el conocimiento adquirido en mis prácticas de React, JS y TS como <span className="underline text-orange-200">el uso de constantes, .filter, .map, arrays y gestión de objetos.</span>
                     </>) :
@@ -168,7 +169,7 @@ export const Project = () => {
                   <Icons icon={tsIcon} name={'TS'} />
 
                   <a className="text-amber-50 font-semibold rounded-lg bg-white/10 p-1 hover:scale-105 hover:bg-white/20 hover:text-amber-400 h-8 cursor-pointer" target="_blank" href="https://github.com/faca1328/To-Do-List-ReactTS" >
-                    {langMode ?
+                    {$LangMode ?
                       (<>
                         Ir al codigo
                       </>) :
@@ -193,7 +194,7 @@ export const Project = () => {
                 <video src={shopVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video4} loop></video>
                 <div className="text-center text-cyan-50 font-medium ">
                   <p>
-                    {langMode ?
+                    {$LangMode ?
                       (<>
                         En esta práctica de un Carrito de Compras, utilizando el diseño del sitio web de Amazon, aprendí a usar <span className="underline text-cyan-200">'React Router Dom', el uso de un 'Proveedor de contexto' para conservar información en todas las páginas, y practiqué mis estilos CSS y el hook useEffect.</span>
                       </>) :
@@ -211,7 +212,7 @@ export const Project = () => {
                     <Icons icon={nodeIcon} name={'NodeJs'} />
 
                     <a className="text-cyan-50 font-semibold rounded-lg bg-white/10 p-1 hover:scale-105 hover:bg-white/20 hover:text-cyan-400 h-8 cursor-pointer" target="_blank" href="https://github.com/faca1328/Nuevo-Proyecto-React-Cart">
-                      {langMode ?
+                      {$LangMode ?
                         (<>
                           Ir al codigo
                         </>) :
@@ -231,7 +232,7 @@ export const Project = () => {
                 <video src={dataVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video5} loop></video>
                 <div className="text-center text-cyan-50 font-medium">
                   <p>
-                  {langMode ?
+                  {$LangMode ?
                         (<>
                           En esta tabla de datos, me concentro en aprender el uso de dos de las habilidades más importantes para mí en los próximos proyectos: <span className="underline text-cyan-200">el uso de Redux Toolkit y las bibliotecas.</span> Aquí los datos se pueden filtrar y ordenar de diversas formas.
                         </>) :
@@ -250,7 +251,7 @@ export const Project = () => {
                     <Icons icon={reduxIcon} name={'Redux'} />
 
                     <a className="text-cyan-50 font-semibold rounded-lg bg-white/10 p-1 hover:scale-105 hover:bg-white/20 hover:text-cyan-400 h-8 cursor-pointer" target="_blank" href="https://github.com/faca1328/dataTable-Proyect-2">
-                      {langMode ?
+                      {$LangMode ?
                         (<>
                           Ir al codigo
                         </>) :
@@ -270,7 +271,7 @@ export const Project = () => {
                 <video src={userVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video6} loop></video>
                 <div className="text-center text-cyan-50 font-medium">
                   <p>
-                  {langMode ?
+                  {$LangMode ?
                         (<>
                           Esta es una de mis primeras prácticas, donde me concentro en <span className="underline text-cyan-200">integrar todos mis conocimientos de Js con React y Ts,</span> con las famosas funciones CRUD para listar nuevos usuarios. Además, aprendí a crear hooks personalizados.
                         </>) :
@@ -288,7 +289,7 @@ export const Project = () => {
                     <Icons icon={viteIcon} name={'Vite'} />
 
                     <a className="text-cyan-50 font-semibold rounded-lg bg-white/10 p-1 hover:scale-105 hover:bg-white/20 hover:text-cyan-400 h-8 cursor-pointer" target="_blank" href="https://github.com/faca1328/Crud-Redux-practica4">
-                      {langMode ?
+                      {$LangMode ?
                         (<>
                           Ir al codigo
                         </>) :
