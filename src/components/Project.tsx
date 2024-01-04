@@ -1,9 +1,9 @@
-import spotyVideo from "../videos/Spotify. - Proyect.mp4"
-import netflixVideo from "../videos/Netflix - Proyect.mp4"
-import todoVideo from "../videos/To Do - Proyect.mp4"
-import shopVideo from "../videos/Shoping Cart - Practice.mp4"
-import dataVideo from "../videos/Data Table - Practice.mp4"
-import userVideo from "../videos/New User - Practice.mp4"
+import spotyVideo from "../videos/SpotifyProyect.webm"
+import netflixVideo from "../videos/NetflixProyect.webm"
+import todoVideo from "../videos/ToDoProyect.webm"
+import shopVideo from "../videos/ShopingCartPractice.webm"
+import dataVideo from "../videos/DataTablePractice.webm"
+import userVideo from "../videos/NewUserPractice.webm"
 import cssIcon from "../../public/icons8-css.svg"
 import tailwindIcon from "../../public/icons8-viento-de-cola-css.svg"
 import astroIcon from "../../public/icons8-astro.svg"
@@ -71,8 +71,8 @@ export const Project = () => {
               onMouseEnter={() => video1.current?.play()}
               onMouseLeave={() => video1.current?.pause()}
             >
-              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" playsInline muted autoPlay ref={video1} loop>
-                <source src={spotyVideo} type="video/mp4" />
+              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" playsInline muted ref={video1} loop>
+                <source src={spotyVideo} type="video/webm" />
                 Your browser does not support the video tag.
               </video>
               <div className="text-center text-amber-50 font-medium">
@@ -112,8 +112,8 @@ export const Project = () => {
               onMouseEnter={() => video2.current?.play()}
               onMouseLeave={() => video2.current?.pause()}
             >
-              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video2} loop>
-              <source src="src/videos/Netflix - Proyect.mp4" type="video/mp4" />
+              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" playsInline muted ref={video2} loop>
+              <source src="src/videos/NetflixProyect.webm" type="video/webm" />
               </video>
               <div className="text-center text-amber-50 font-medium">
                 <p>
@@ -153,7 +153,7 @@ export const Project = () => {
               onMouseEnter={() => video3.current?.play()}
               onMouseLeave={() => video3.current?.pause()}
             >
-              <video src={todoVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video3} loop ></video>
+              <video src={todoVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" playsInline muted ref={video3} loop ></video>
               <div className="text-center text-amber-50 font-medium">
                 <p>
                   {$LangMode ?
