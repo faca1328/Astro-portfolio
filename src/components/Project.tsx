@@ -36,8 +36,8 @@ export const Project = () => {
   const video5 = useRef<HTMLVideoElement>(null);
   const video6 = useRef<HTMLVideoElement>(null);
 
-
-
+ 
+  
   return (
     <div className="flex w-screen bg-zinc-800 text-white flex-col h-full items-center pt-10" id="projects">
       <div className="rounded-full bg-gray-500 bg-opacity-20 items-center p-[2px] justify-between w-fit flex m-auto">
@@ -62,7 +62,7 @@ export const Project = () => {
           }
         </button>
       </div>
-
+          
       <div className={`${portfolio ? 'transition-left-enter' : 'transition-right-enter'} inline-flex justify-center`}>
         {portfolio ? (
 
@@ -71,9 +71,8 @@ export const Project = () => {
               onMouseEnter={() => video1.current?.play()}
               onMouseLeave={() => video1.current?.pause()}
             >
-              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video1} loop>
+              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted autoPlay ref={video1} loop>
                 <source src={spotyVideo} type="video/mp4" />
-                Tu navegador no soporta la reproducción de video. Puedes descargarlo
               </video>
               <div className="text-center text-amber-50 font-medium">
                 <p>
@@ -112,7 +111,9 @@ export const Project = () => {
               onMouseEnter={() => video2.current?.play()}
               onMouseLeave={() => video2.current?.pause()}
             >
-              <video src={netflixVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video2} loop></video>
+              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video2} loop>
+              <source src="src/videos/Netflix - Proyect.mp4" type="video/mp4" />
+              </video>
               <div className="text-center text-amber-50 font-medium">
                 <p>
                   {$LangMode ?
@@ -151,7 +152,7 @@ export const Project = () => {
               onMouseEnter={() => video3.current?.play()}
               onMouseLeave={() => video3.current?.pause()}
             >
-              <video src={todoVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video3} loop></video>
+              <video src={todoVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video3} loop ></video>
               <div className="text-center text-amber-50 font-medium">
                 <p>
                   {$LangMode ?
@@ -235,14 +236,14 @@ export const Project = () => {
                 <video src={dataVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video5} loop></video>
                 <div className="text-center text-cyan-50 font-medium">
                   <p>
-                    {$LangMode ?
-                      (<>
-                        En esta tabla de datos, me concentro en aprender el uso de dos de las habilidades más importantes para mí en los próximos proyectos: <span className="underline text-cyan-200">el uso de Redux Toolkit y las bibliotecas.</span> Aquí los datos se pueden filtrar y ordenar de diversas formas.
-                      </>) :
-                      (<>
-                        In this data table, I concentrate on learning the use of two of the most important skills for me in the projects to come: <span className="underline text-cyan-200">the use of the Redux Toolkit and libraries.</span> The data can be filtered and ordered in a variety of ways here.
-                      </>)
-                    }
+                  {$LangMode ?
+                        (<>
+                          En esta tabla de datos, me concentro en aprender el uso de dos de las habilidades más importantes para mí en los próximos proyectos: <span className="underline text-cyan-200">el uso de Redux Toolkit y las bibliotecas.</span> Aquí los datos se pueden filtrar y ordenar de diversas formas.
+                        </>) :
+                        (<>
+                         In this data table, I concentrate on learning the use of two of the most important skills for me in the projects to come: <span className="underline text-cyan-200">the use of the Redux Toolkit and libraries.</span> The data can be filtered and ordered in a variety of ways here.
+                        </>)
+                      }
                   </p>
                 </div>
                 <div className="flex flex-wrap justify-center mt-4 text-black items-center w-full gap-5 mb-2 border-t ">
@@ -274,14 +275,14 @@ export const Project = () => {
                 <video src={userVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video6} loop></video>
                 <div className="text-center text-cyan-50 font-medium">
                   <p>
-                    {$LangMode ?
-                      (<>
-                        Esta es una de mis primeras prácticas, donde me concentro en <span className="underline text-cyan-200">integrar todos mis conocimientos de Js con React y Ts,</span> con las famosas funciones CRUD para listar nuevos usuarios. Además, aprendí a crear hooks personalizados.
-                      </>) :
-                      (<>
-                        This is one of my first practices, where I concentrate heavily on <span className="underline text-cyan-200">integrating all my knowledge of Js in React and Ts,</span> all together with the famous CRUD functions for listing new users. Additionally, I learned how to create a custom hooks.
-                      </>)
-                    }
+                  {$LangMode ?
+                        (<>
+                          Esta es una de mis primeras prácticas, donde me concentro en <span className="underline text-cyan-200">integrar todos mis conocimientos de Js con React y Ts,</span> con las famosas funciones CRUD para listar nuevos usuarios. Además, aprendí a crear hooks personalizados.
+                        </>) :
+                        (<>
+                          This is one of my first practices, where I concentrate heavily on <span className="underline text-cyan-200">integrating all my knowledge of Js in React and Ts,</span> all together with the famous CRUD functions for listing new users. Additionally, I learned how to create a custom hooks.
+                        </>)
+                      }
                   </p>
                 </div>
                 <div className="flex flex-wrap justify-center mt-4 text-black items-center w-full gap-5 mb-2 border-t ">
