@@ -71,8 +71,9 @@ export const Project = () => {
               onMouseEnter={() => video1.current?.play()}
               onMouseLeave={() => video1.current?.pause()}
             >
-              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted autoPlay ref={video1} loop>
+              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" playsInline muted autoPlay ref={video1} loop>
                 <source src={spotyVideo} type="video/mp4" />
+                Your browser does not support the video tag.
               </video>
               <div className="text-center text-amber-50 font-medium">
                 <p>
