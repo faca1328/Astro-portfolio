@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
 								</>)}
 						</span>
 						<ul className="flex flex-row gap-8 items-center max-phone:flex-col max-phone:mt-4 max-phone:gap-4">
-							<div className="max-phone:flex max-phone:flex-row max-phone:gap-6">
+							<div className="max-phone:flex max-phone:flex-row gap-6 flex">
 								<li>
 									<a href="https://www.linkedin.com/in/facundo-martinez-831775102/?locale=en_US" target="_blank" >
 										<img src={INIcon.src} alt="Linkedin" className="hover:scale-105 hover:shadow-sm hover:shadow-cyan-300 transition-all duration-10000" />
