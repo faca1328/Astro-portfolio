@@ -71,10 +71,8 @@ export const Project = () => {
               onMouseEnter={() => video1.current?.play()}
               onMouseLeave={() => video1.current?.pause()}
             >
-              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" playsInline muted ref={video1} loop>
-                <source src={spotyVideo} type="video/webm" />
-                Your browser does not support the video tag.
-              </video>
+              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video1} loop
+              src={spotyVideo} />
               <div className="text-center text-amber-50 font-medium">
                 <p>
                   {$LangMode ?
@@ -112,9 +110,9 @@ export const Project = () => {
               onMouseEnter={() => video2.current?.play()}
               onMouseLeave={() => video2.current?.pause()}
             >
-              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" playsInline muted ref={video2} loop>
-              <source src="src/videos/NetflixProyect.webm" type="video/webm" />
-              </video>
+              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video2} loop
+              src={netflixVideo}/>
+
               <div className="text-center text-amber-50 font-medium">
                 <p>
                   {$LangMode ?
@@ -153,7 +151,7 @@ export const Project = () => {
               onMouseEnter={() => video3.current?.play()}
               onMouseLeave={() => video3.current?.pause()}
             >
-              <video src={todoVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" playsInline muted ref={video3} loop ></video>
+              <video src={todoVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video3} loop />
               <div className="text-center text-amber-50 font-medium">
                 <p>
                   {$LangMode ?
@@ -196,7 +194,7 @@ export const Project = () => {
                 onMouseEnter={() => video4.current?.play()}
                 onMouseLeave={() => video4.current?.pause()}
               >
-                <video src={shopVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video4} loop></video>
+                <video src={shopVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video4} loop />
                 <div className="text-center text-cyan-50 font-medium ">
                   <p>
                     {$LangMode ?
