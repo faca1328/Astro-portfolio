@@ -15,21 +15,21 @@ export const Body: React.FC = () => {
             <div className="flex w-screen relative h-[35rem] min-h-fit">
                 <div className="flex-1 bg-zinc-800 relative max-phone:h-full">
                     <div
-                        className="w-[50%] h-full absolute top-[15%] ml-16 max-md:w-[85%] max-sm:top-[10%] max-phone:top-4 max-phone:-left-6 max-phone:text-center"
+                        className="w-[50%] h-full absolute top-[15%] ml-16 max-md:w-[85%] max-sm:top-[10%] max-phone:top-4 max-phone:-left-6 max-phone:text-center max-phone:ml-12"
                     >
                         <h1 className="text-orange-100/80 text-4xl max-phone:text-2xl">
                             {
                                 $LangMode ? (
                                     <>
                                         Hola! mi nombre es{" "} <br />
-                                        <span className="font-serif text-5xl font-semibold text-orange-400/70 max-phone:text-4xl">
+                                        <span className="font-serif font-semibold text-orange-400/70 max-phone:text-2xl text-5xl">
                                             Facundo Martinez
                                         </span>
                                         <>
                                             <br />
                                         </>{" "}
                                         y soy{" "}
-                                        <span className="logo-gradient-dark font-medium text-[2.5rem]">
+                                        <span className="logo-gradient-dark font-medium max-phone:text-2xl ">
                                             Front-End
                                         </span>{" "}
                                         Web Developer

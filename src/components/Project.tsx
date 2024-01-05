@@ -71,7 +71,7 @@ export const Project = () => {
               onMouseEnter={() => video1.current?.play()}
               onMouseLeave={() => video1.current?.pause()}
             >
-              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video1} loop
+              <video className="w-full h-auto rounded-md mb-4 " muted ref={video1} loop
               src={spotyVideo} />
               <div className="text-center text-amber-50 font-medium">
                 <p>
@@ -110,7 +110,7 @@ export const Project = () => {
               onMouseEnter={() => video2.current?.play()}
               onMouseLeave={() => video2.current?.pause()}
             >
-              <video className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video2} loop
+              <video className="w-full h-auto rounded-md mb-4 " muted ref={video2} loop
               src={netflixVideo}/>
 
               <div className="text-center text-amber-50 font-medium">
@@ -151,7 +151,7 @@ export const Project = () => {
               onMouseEnter={() => video3.current?.play()}
               onMouseLeave={() => video3.current?.pause()}
             >
-              <video src={todoVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video3} loop />
+              <video src={todoVideo} className="w-full h-auto rounded-md mb-4 " muted ref={video3} loop />
               <div className="text-center text-amber-50 font-medium">
                 <p>
                   {$LangMode ?
@@ -194,7 +194,7 @@ export const Project = () => {
                 onMouseEnter={() => video4.current?.play()}
                 onMouseLeave={() => video4.current?.pause()}
               >
-                <video src={shopVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video4} loop />
+                <video src={shopVideo} className="w-full h-auto rounded-md mb-4 " muted ref={video4} loop />
                 <div className="text-center text-cyan-50 font-medium ">
                   <p>
                     {$LangMode ?
@@ -232,7 +232,7 @@ export const Project = () => {
                 onMouseEnter={() => video5.current?.play()}
                 onMouseLeave={() => video5.current?.pause()}
               >
-                <video src={dataVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video5} loop></video>
+                <video src={dataVideo} className="w-full h-auto rounded-md mb-4 " muted ref={video5} loop></video>
                 <div className="text-center text-cyan-50 font-medium">
                   <p>
                   {$LangMode ?
@@ -271,7 +271,7 @@ export const Project = () => {
                 onMouseEnter={() => video6.current?.play()}
                 onMouseLeave={() => video6.current?.pause()}
               >
-                <video src={userVideo} className="w-full h-auto rounded-md mb-4 max-phone:w-[85%]" muted ref={video6} loop></video>
+                <video src={userVideo} className="w-full h-auto rounded-md mb-4 " muted ref={video6} loop></video>
                 <div className="text-center text-cyan-50 font-medium">
                   <p>
                   {$LangMode ?

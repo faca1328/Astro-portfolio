@@ -25,7 +25,7 @@ export const Technologies: React.FC = () => {
   return (
 
 
-    <div id="technologies" className="flex w-screen relative h-[35rem] min-h-fit">
+    <div id="technologies" className="flex w-screen relative h-[35rem] min-h-fit max-phone:mb-10">
       <div className="flex-1 bg-zinc-700 relative max-phone:h-full">
         <div
           className="rounded-r-[30%] absolute w-[40%] z-50 -left-6 h-full items-center font-serif max-md:hidden bg-cover bg-no-repeat"
@@ -40,13 +40,13 @@ export const Technologies: React.FC = () => {
             <h1 className="text-4xl py-1 font-bold gradient-dark">
               {
                 $LangMode ? (
-                  <>Mis tecnologías con más experiencia:</>
+                  <span className="text-2xl">Mis tecnologías con más experiencia:</span>
                 ) : (
                   <>My main skills are:</>
                 )
               }
             </h1>
-            <div className="flex justify-between w-[75%] mx-auto mt-9 flex-wrap">
+            <div className="grid grid-flow-col max-phone:grid-rows-2 max-phone:gap-4 justify-items-center w-[75%] mx-auto mt-9">
               <Icons icon={reactIcon} name={"React"} />
               <Icons icon={viteIcon} name={"Vite"} />
               <Icons icon={tsIcon} name={"TS"} />
@@ -55,7 +55,7 @@ export const Technologies: React.FC = () => {
             </div>
           </div>
           <div className="mt-10 items-center">
-            <p className="text-2xl mt-14 py-1 font-bold gradient-ligth">
+            <p className="text-2xl mt-14 py-1 font-bold gradient-ligth max-phone:mt-8">
               {
                 $LangMode ? (
                   <>También soy competente con:</>
@@ -64,7 +64,7 @@ export const Technologies: React.FC = () => {
                 )
               }
             </p>
-            <div className="flex items-center mt-9 justify-between flex-wrap">
+            <div className="grid grid-flow-col max-phone:grid-rows-2 max-phone:gap-4 items-center mt-9 justify-between">
               <Icons icon={cssIcon} name={"CSS"} />
               <Icons icon={sassIcon} name={"Sass"} />
 

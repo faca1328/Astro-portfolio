@@ -10,7 +10,7 @@ export const LanguajeIcon = () => {
 
 
   return (
-    <div className="rounded-full items-center p-[2px] justify-between w-fit flex ml-auto mr-36 bg-white bg-opacity-10 gap-1 max-md:ml-2 max-phone:ml-5 max-md:mr-8 ">
+    <div className="rounded-full items-center p-[2px] justify-between w-fit flex ml-auto mr-36 bg-white bg-opacity-10 gap-1 max-md:ml-2 max-md:mr-8 max-phone:m-auto">
         <button className={`p-1 px-2 font-semibold text-amber-100 rounded-full ${languageModeEs} transition-all duration-500`} onClick={()=> LangMode.set(true)}>
             es
         </button>
